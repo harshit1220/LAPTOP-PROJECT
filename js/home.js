@@ -1,17 +1,30 @@
-var imgs = document.querySelectorAll('.slider img');
-var dots = document.querySelectorAll('.dot');
-var currentImg = 0; // index of the first image 
-const interval = 3000; // duration(speed) of the slide
+let slideIndex = 1;
+showSlides(slideIndex);
 
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-function changeSlide(n) {
-    for (var i = 0; i < imgs.length; i++) { // reset
-        imgs[i].style.opacity = 0;
-        dots[i].className = dots[i].className.replace(' active', '');
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+        slideIndex = 1;
     }
 
-    currentImg = n;
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
 
-    imgs[currentImg].style.opacity = 1;
-    dots[currentImg].className += ' active';
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-dot", "");
+    }
+
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " active-dot";
 }
