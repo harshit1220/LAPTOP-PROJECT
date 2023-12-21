@@ -34,6 +34,7 @@ nav{
 nav ul{
     list-style-type: none;
     display: flex;
+
     align-items: center;
     gap: 20px;
 }
@@ -67,6 +68,7 @@ li a:hover{
   
   .slides {
     display: flex;
+
   }
   
   .slide {
@@ -165,6 +167,12 @@ label{
     background-image: url(https://i.pinimg.com/564x/95/f7/c4/95f7c4af80449e65e885d1bd51229715.jpg);
 }
 
+.Chromebook{
+    margin-top: 80px;
+    margin-left: -80px;
+    background-image: url(https://i.pinimg.com/564x/27/3d/13/273d13b8644ebd5b5ff15bcbfcf3f3c3.jpg);
+}
+
 .ROG{
     margin-top: 80px;
     margin-left: -80px;
@@ -173,6 +181,7 @@ label{
 /* -------------------------------ITEMS------------------------------- */
 .items{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: right;
     margin-right: 150px;
@@ -196,6 +205,7 @@ label{
 .colors{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 40px;
 }
@@ -266,6 +276,7 @@ hr{
 
 .saver{
 display: flex;
+flex-wrap: wrap;
 font-size: 13px;
 font-weight: bolder;
 padding: 20px 0px;
@@ -307,6 +318,7 @@ li{
 .features{
     height: 250px;
     display: flex;
+    flex-wrap: wrap;
     margin: 20px 0 20px;
     align-items: center;
     justify-content: space-around;
@@ -315,6 +327,7 @@ li{
 
 .box{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 150px;
@@ -330,6 +343,7 @@ li{
     height: 400px;
     background-color: rgb(3, 8, 36);
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: space-around;
 }

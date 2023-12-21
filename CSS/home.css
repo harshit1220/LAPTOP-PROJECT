@@ -13,6 +13,7 @@ body{
 nav{
     background-color: rgb(3, 8, 36);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -28,6 +29,7 @@ nav{
 nav ul{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
 }
@@ -61,6 +63,7 @@ li a:hover{
 
 .slides {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .slide {
@@ -75,6 +78,7 @@ li a:hover{
 
 .active {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .dots-container {
@@ -164,11 +168,13 @@ div>.poster{
 }
 .products{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .product1{
   display: flex;
+  flex-wrap: wrap;
   height: 350px;
   width: 280px;
   background-color: transparent;
@@ -210,6 +216,7 @@ div>.poster{
   height: 400px;
   background-color: rgb(3, 8, 36);
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   justify-content: space-around;
 }

@@ -7,11 +7,11 @@
 nav{
     background-color: rgb(3, 8, 36);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
     padding: 20px 50px;
-    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
+    box-shadow: 10px 10px 10px rgba(41, 26, 26, 0.548);
     color: white;
     position: fixed;
     z-index: 2;
@@ -22,6 +22,7 @@ nav{
 nav ul{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
 }
@@ -52,14 +53,14 @@ li a:hover{
 /* ------------------GALLARY------------------------- */
 
 body{
-    background: linear-gradient(to bottom, #e4e0e0, #7c7777);
+    background: linear-gradient(to Right, #e4e0e0, #7c7777);
 }
 
 .a{
  
-    height: 700px;
+    height: 650px;
     width: 95%;
-    background-image: url(https://wallpapercave.com/wp/wp6292131.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp9311109.jpg);
     background-repeat: no-repeat;
     margin: auto;
     background-size: cover;
@@ -71,6 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 
 }
 
@@ -105,6 +107,98 @@ body{
 }
 
 
+.second{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.one{
+
+height: 320px;
+width: 40%;
+background-color: transparent;
+margin-top:20px;
+
+}
+
+.b6{
+    background-image: url(https://i.pinimg.com/564x/47/24/75/47247506c250977a2f0eed8d74d46763.jpg);
+    background-size: cover;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box1{
+    height: 320px;
+    width: 40%;
+    background-color: white;
+}
+
+.b7{
+    background-image: url(https://i.pinimg.com/564x/25/c0/3a/25c03a0bc458bfdf71208c459aa406c1.jpg);
+    background-size: cover;
+}
+
+.b8{
+    background-image: url(https://i.pinimg.com/564x/25/c0/3a/25c03a0bc458bfdf71208c459aa406c1.jpg);
+    background-size: cover;
+}
+
+.b9{
+    background-image: url(https://i.pinimg.com/736x/1c/b5/1a/1cb51a09e02b172269083f2775aa36ba.jpg);
+    background-size: cover;
+}
+
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.three{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    width: 650px;
+}
+
+.box2{
+    height: 320px;
+    width: 40%;
+    background-color: white;
+}
+
+.b10{
+    background-image: url(https://i.pinimg.com/564x/93/bd/d2/93bdd2b1dd4d6a25bb666ef186f0a1c4.jpg);
+    background-size: cover;
+}
+
+.b11{
+    background-image: url(https://i.pinimg.com/564x/63/a1/ed/63a1ed1e093a047e6a508b86218c191d.jpg);
+    background-size: cover;
+}
+
+/* .b12{
+    background-image: url(https://i.pinimg.com/736x/1c/b5/1a/1cb51a09e02b172269083f2775aa36ba.jpg);
+    background-size: cover;
+} */
+
+.b13{
+    background-image: url(https://i.pinimg.com/564x/47/24/75/47247506c250977a2f0eed8d74d46763.jpg);
+    background-size: cover;
+}
+
 
 /* -----------------------------------FOOTER---------------------------------- */
 
@@ -114,6 +208,7 @@ body{
     height: 400px;
     background-color: rgb(3, 8, 36);
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: space-around;
 }
